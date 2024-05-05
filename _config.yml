@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "개발자 지망생" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "공부나 하자" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -228,9 +228,8 @@ sass:
 permalink: /:categories/:title/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
 # Pagination with jekyll-paginate
-paginate: 5 # amount of posts to show
+paginate: 15 # amount of posts to show
 paginate_path: /page:num/
 
 # Pagination with jekyll-paginate-v2
@@ -240,14 +239,14 @@ pagination:
   # Set enabled to true to use paginate v2
   # enabled: true
   debug: false
-  collection: '_posts'
+  collection: 'posts'
   per_page: 10
   permalink: '/page/:num/'
   title: ':title - page :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-  category: 'posts'
+  category: '_posts'
   tag: ''
   locale: ''
   trail:
